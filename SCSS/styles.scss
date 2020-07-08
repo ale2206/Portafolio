@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(87, 110, 116);
+}
+
+/*Header*/
+.header{
+    width: 1000px;
+    align-items: center;  
+    margin-left: 265px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+
+    &--nav{
+        width: 800px;
+        margin-left: 100px;
+
+        &__list{
+            display: flex;
+            list-style: none;
+            font-size: 20px;
+            margin-left: 90px;
+        }
+
+        &__link{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 40px;
+            padding-left: 40px;
+            border-right:1px solid;   
+            border-left: 1px solid;  
+            border-color: transparent;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border-radius: 5px;
+
+            &:hover{
+                background: rgb(178, 206, 218);
+                color: rgb(255, 255, 255);
+                border-color: rgb(172, 164, 164);
+            }
+        }
+
+
+    }
+
+    &__name{
+        margin-top: 60px;
+        margin-left: 155px;
+        font-size: 50px;
+    }
+
+}
+/*Header end*/
+
+
+/*section*/
+.section{
+    width: 1000px;
+    margin-left: 260px;    
+
+    /*About*/
+    &--articleAbout{
+        background: rgb(0, 0, 0);
+        padding: 1em;
+        border-radius: 10px;
+        height: 168px;
+        clip-path: circle(10% at 90% 40%);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+
+        &:hover{
+            clip-path: circle(75%);
+            background: rgb(147, 189, 175);
+        }
+
+        &__span{
+            float: right;
+            font-size: 25px;
+            margin-right: 25px;
+            margin-top: 50px;
+            color: rgb(255, 255, 255);
+        }
+
+        &:hover &__span{
+            color: transparent;
+        }
+
+        &__title{
+            font-size: 30px;
+        }
+
+        &__text{
+            font-size: 15px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+    /*About end*/
+
+    /*Skills*/
+    &--articleSkills{
+        background: rgb(255, 255, 255);
+        margin-top: 20px;
+        padding: 1em;
+        border-radius: 10px;
+        height: 370px;
+        clip-path: circle(10% at 10% 20%);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+
+        &:hover{
+            clip-path: circle(75%);
+            background: rgb(147, 169, 189);
+        }
+
+        &__span{
+            float: left;
+            font-size: 30px;
+            margin-left: 45px;
+            margin-top: 45px;
+            color: rgb(0, 0, 0);
+        }
+
+        &:hover &__span{
+            color: transparent;
+        }
+
+        &__list{
+            margin-left: 100px;
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            list-style: none;
+            text-align: center;
+        }
+
+        &__item{
+            margin: 2px;
+            padding: 10px;
+            clip-path: inset(0% 0% 40% 0%);
+            transition: all .5s ease-in-out;
+            cursor: pointer;
+
+            &:hover{
+                clip-path: inset(0% 0% 0% 0%);
+            }
+        }
+
+        &__item i{
+            font-size: 60px;
+
+            &:hover i{
+                color: rgb(32, 25, 25);
+            }
+        }
+
+        &__text{
+            margin-top: 15px;
+        }
+    }
+    /*Skills end*/
+
+    /*Projects*/
+    &--articleProjects{
+        background: rgb(0, 0, 0);
+        margin-top: 20px;
+        padding: 1em;
+        border-radius: 10px;
+        height: 890px;
+        clip-path: circle(10% at 90% 11%);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+
+        &:hover{
+            clip-path: circle(75%);
+            background: rgb(196, 196, 196);
+        }
+
+        &__span{
+            float: right;
+            font-size: 25px;
+            margin-right: 35px;
+            margin-top: 70px;
+            color: rgb(255, 255, 255);
+        }
+
+        &:hover &__span{
+            color: transparent;
+        }
+
+        &--project{
+            background: rgb(196, 196, 196);
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            width: 935px;
+            padding: 1em;
+            margin-top: 10px;
+            clip-path: inset(0% 65% 0% 0%);
+            transition: all .5s ease-in-out;
+            cursor: pointer;
+
+            &:hover{
+                clip-path: inset(0% 0% 0% 0%);
+                background: rgb(128, 128, 128);
+            }
+
+            &__title{
+                font-size: 30px;
+            }
+
+            &__img{
+                width: 300px;
+                padding-right: 25px;
+            }
+        }
+
+        &__text{
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+    /*Projects end*/
+}
+/*section end*/
+
+/*Footer*/
+.footer{
+    margin-top: 30px;
+    background: rgb(65, 80, 83);
+
+    &__title{
+        font-size: 25px;
+        padding-left: 700px;
+        padding-top: 20px;
+    }
+
+    &__list{
+        display: flex;
+        list-style: none;
+        margin-left: 400px;
+    }
+
+    &__item{
+        width: 220px;
+        align-items: center;
+        margin-top: 20px;
+        clip-path: inset(0% 87% 0% 0%);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+
+        &:hover{
+            clip-path: inset(0% 0% 0% 0%);
+        }
+
+        &i{
+            font-size: 30px;
+            margin-right: 10px
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        padding: 4px;
+        border: 1px solid;
+        border-color: transparent;
+        border-radius: 5px;
+
+        &:hover{
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    &__rights{
+        margin-top: 70px;
+        margin-left: 525px;
+        font-family: monospace;
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+}
+/*Footer end*/
