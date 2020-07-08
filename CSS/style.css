@@ -55,14 +55,14 @@ body{
 }
 /*Header end*/
 
-/*About*/
-.sectionAbout{
+.section{
     width: 1000px;
-    height: 200px;
+    height: 1000px;
     margin-left: 260px;    
 }
 
-.sectionAbout--articleAbout{
+/*About*/
+.section--articleAbout{
     background: rgb(0, 0, 0);
     padding: 1em;
     border-radius: 10px;
@@ -72,20 +72,20 @@ body{
     cursor: pointer;
 }
 
-.sectionAbout--articleAbout:hover{
+.section--articleAbout:hover{
     clip-path: circle(75%);
-    background: rgb(178, 206, 218);
+    background: rgb(147, 189, 175);
 }
 
 .articleAbout__span{
     float: right;
-    font-size: 30px;
-    margin-right: 75px;
-    margin-top: 45px;
+    font-size: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
     color: rgb(255, 255, 255);
 }
 
-.sectionAbout--articleAbout:hover .articleAbout__span i{
+.section--articleAbout:hover .articleAbout__span{
     color: rgb(255, 255,255,0);
 }
 
@@ -95,9 +95,76 @@ body{
 
 .articleAbout__text{
     font-size: 15px;
-    text-align: center
+    text-align: center;
+    margin-top: 10px;
 }
 /*About end*/
+
+/*Skills*/
+.section--articleSkills{
+    background: rgb(255, 255, 255);
+    margin-top: 20px;
+    padding: 1em;
+    border-radius: 10px;
+    height: 370px;
+    clip-path: circle(10% at 10% 20%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.section--articleSkills:hover{
+    clip-path: circle(75%);
+    background: rgb(147, 148, 189);
+}
+
+.articleSkills__span{
+    float: left;
+    font-size: 30px;
+    margin-left: 45px;
+    margin-top: 45px;
+    color: rgb(0, 0, 0);
+}
+
+.section--articleSkills:hover .articleSkills__span{
+    color: rgb(255, 255,255,0);
+}
+
+.articleSkills__list{
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    list-style: none;
+    text-align: center;
+}
+
+.articleSkills__item{
+    margin: 2px;
+    padding: 10px;
+    clip-path: inset(0% 0% 40% 0%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.articleSkills__item:hover{
+    clip-path: inset(0% 0% 0% 0%);
+}
+
+.articleSkills__item i{
+    font-size: 60px;
+}
+
+.articleSkills__item:hover i{
+    color: rgb(32, 25, 25);
+}
+
+.articleSkills__text{
+    margin-top: 15px;
+}
+/*Skills end*/
+
+/*Projects*/
+
+/*Projects end*/
 
 /*Footer*/
 .footer{
@@ -106,20 +173,21 @@ body{
 }
 
 .footer__title{
-    font-size: 20px;
-    padding-left: 20px;
+    font-size: 25px;
+    padding-left: 700px;
     padding-top: 20px;
 }
 
 .footer__list{
+    display: flex;
     list-style: none;
-    margin-left: 20px;
+    margin-left: 400px;
 }
 
 .footer__item{
     width: 220px;
     align-items: center;
-    margin-top: 1px;
+    margin-top: 20px;
     clip-path: inset(0% 87% 0% 0%);
     transition: all .5s ease-in-out;
     cursor: pointer;
@@ -149,7 +217,7 @@ body{
 }
 
 .footer__rights{
-    margin-top: 20px;
+    margin-top: 70px;
     margin-left: 525px;
     font-family: monospace;
     font-size: 18px;
