@@ -1,0 +1,49 @@
+/*Header*/
+.header{
+    width: 1000px;
+    align-items: center;  
+    margin-left: 265px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+
+    &--nav{
+        width: 800px;
+        margin-left: 100px;
+
+        &__list{
+            display: flex;
+            list-style: none;
+            font-size: 20px;
+            margin-left: 90px;
+        }
+
+        &__link{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 40px;
+            padding-left: 40px;
+            border-right:1px solid;   
+            border-left: 1px solid;  
+            border-color: transparent;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border-radius: 5px;
+
+            &:hover{
+                background: $navHover;
+                color: $white;
+                border-color: $borderNavHover;
+            }
+        }
+
+
+    }
+
+    &__name{
+        margin-top: 60px;
+        margin-left: 155px;
+        font-size: 50px;
+    }
+
+}
+/*Header end*/
