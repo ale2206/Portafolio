@@ -8,6 +8,7 @@ body{
     background-color: rgb(87, 110, 116);
 }
 
+/*Header*/
 .header{
     width: 1000px;
     align-items: center;  
@@ -52,7 +53,53 @@ body{
     margin-left: 175px;
     font-size: 50px;
 }
+/*Header end*/
 
+/*About*/
+.sectionAbout{
+    width: 1000px;
+    height: 200px;
+    margin-left: 260px;    
+}
+
+.sectionAbout--articleAbout{
+    background: rgb(0, 0, 0);
+    padding: 1em;
+    border-radius: 10px;
+    height: 168px;
+    clip-path: circle(10% at 90% 40%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.sectionAbout--articleAbout:hover{
+    clip-path: circle(75%);
+    background: rgb(178, 206, 218);
+}
+
+.articleAbout__span{
+    float: right;
+    font-size: 30px;
+    margin-right: 75px;
+    margin-top: 45px;
+    color: rgb(255, 255, 255);
+}
+
+.sectionAbout--articleAbout:hover .articleAbout__span i{
+    color: rgb(255, 255,255,0);
+}
+
+.articleAbout__title{
+    font-size: 30px;
+}
+
+.articleAbout__text{
+    font-size: 15px;
+    text-align: center
+}
+/*About end*/
+
+/*Footer*/
 .footer{
     margin-top: 30px;
     background: rgb(65, 80, 83);;
@@ -70,6 +117,7 @@ body{
 }
 
 .footer__item{
+    width: 220px;
     align-items: center;
     margin-top: 1px
 }
@@ -77,10 +125,6 @@ body{
 .footer__item i{
     font-size: 30px;
     margin-right: 10px
-}
-
-.footer__item i:hover{
-    color: rgb(37, 37, 37);
 }
 
 .footer__link{
@@ -107,3 +151,4 @@ body{
     font-weight: bold;
     padding-bottom: 5px;
 }
+/*Footer end*/
