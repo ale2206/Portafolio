@@ -26,7 +26,7 @@ body{
     display: flex;
     list-style: none;
     font-size: 20px;
-    margin-left: 130px;
+    margin-left: 90px;
 }
 
 .nav__link{
@@ -43,14 +43,14 @@ body{
 }
 
 .nav__link:hover{
-    background: rgb(180, 180, 180);
+    background: rgb(178, 206, 218);
     color: white;
     border-color: rgb(172, 164, 164);
 }
 
 .header__name{
     margin-top: 60px;
-    margin-left: 175px;
+    margin-left: 155px;
     font-size: 50px;
 }
 /*Header end*/
@@ -119,7 +119,14 @@ body{
 .footer__item{
     width: 220px;
     align-items: center;
-    margin-top: 1px
+    margin-top: 1px;
+    clip-path: inset(0% 87% 0% 0%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.footer__item:hover{
+    clip-path: inset(0% 0% 0% 0%);
 }
 
 .footer__item i{
@@ -138,9 +145,7 @@ body{
 }
 
 .footer__link:hover{
-    background: rgb(180, 180, 180);
     color: white;
-    border-color: rgb(172, 164, 164);
 }
 
 .footer__rights{
