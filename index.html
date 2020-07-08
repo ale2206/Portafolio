@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <nav class="header--nav">
+        <nav data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" class="header--nav">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="#1">About Me</a></li>
                 <li class="nav__item"><a class="nav__link" href="#2">Skills</a></li>
-                <li class="nav__item"><a class="nav__link" href="">Projects</a></li>
+                <li class="nav__item"><a class="nav__link" href="#3">Projects</a></li>
                 <li class="nav__item"><a class="nav__link" href="#4">Contact</a></li>
             </ul>
         </nav>
@@ -39,11 +42,30 @@
                 <li class="articleSkills__item"><i class="fas fa-database"></i><p class="articleSkills__text">SQL Server</p></li>
                 <li class="articleSkills__item"><i class="fab fa-wordpress"></i><p class="articleSkills__text">WordPress</p></li>
                 <li class="articleSkills__item"><i class="icon devicon-mysql-plain m-3"></i><p class="articleSkills__text">WorkBench</p></li>
-                <li class="articleSkills__item"><i class="icon devicon-oracle-original m-3"></i><p class="articleSkills__text">Oracle</p></li>                
+                <li class="articleSkills__item"><i class="icon devicon-oracle-original m-3"></i><p class="articleSkills__text">Oracle</p></li>  
+                <li class="articleSkills__item"><i class="icon devicon-git-plain m-3"></i></i><p class="articleSkills__text">GitHub</p></li>              
             </ul>
         </article>
-        <article class="section--articleProjects">
-
+        <article class="section--articleProjects" id="3">
+            <samp class="articleProjects__span">Projects</samp>
+            <div class="articleProjects--project">
+                <h2 class="project__title">LabsTech</h2>
+                <h3>Description</h3>
+                <img class="project__img" src="Image/Logo.JPG" alt="LabsTech">
+                <p class="project__text">Hello everybody, my name is Alejandro Morales Jiménez, I am a student at the University of Costa Rica.</p>
+            </div>
+            <div class="articleProjects--project">
+                <h2 class="project__title">SIBE</h2>
+                <h3>Description</h3>
+                <img class="project__img" src="Image/Logo.JPG" alt="LabsTech">
+                <p class="project__text">Hello everybody, my name is Alejandro Morales Jiménez, I am a student at the University of Costa Rica.</p>
+            </div>
+            <div class="articleProjects--project">
+                <h2 class="project__title">SIDDR-UCR-Pacific</h2>
+                <h3>Description</h3>
+                <img class="project__img" src="Image/Logo.JPG" alt="LabsTech">
+                <p class="project__text">Hello everybody, my name is Alejandro Morales Jiménez, I am a student at the University of Costa Rica.</p>
+            </div>
         </article>
     </section>
     <footer class="footer" id="4">
@@ -57,4 +79,8 @@
         <p class="footer__rights">© 2020 Alejandro Morales Jiménez, All rights reserved</p>
     </footer>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>
