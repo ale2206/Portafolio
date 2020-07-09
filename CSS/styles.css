@@ -10,23 +10,21 @@ body {
 
 /*Header*/
 .header {
-  width: 1000px;
   align-items: center;
-  margin-left: 265px;
   margin-top: 100px;
   margin-bottom: 30px;
 }
 
 .header--nav {
-  width: 800px;
-  margin-left: 100px;
+  width: 100%;
 }
 
 .header--nav__list {
+  width: 40%;
   display: flex;
   list-style: none;
   font-size: 20px;
-  margin-left: 90px;
+  margin-left: 30%;
 }
 
 .header--nav__link {
@@ -50,7 +48,7 @@ body {
 
 .header__name {
   margin-top: 60px;
-  margin-left: 155px;
+  margin-left: 27%;
   font-size: 50px;
 }
 
@@ -58,8 +56,8 @@ body {
 
 /*section*/
 .section {
-  width: 1000px;
-  margin-left: 260px;
+  width: 66%;
+  margin-left: 17%;
 }
 
 /*About*/
@@ -81,7 +79,7 @@ body {
 .section--articleAbout__span {
   float: right;
   font-size: 25px;
-  margin-right: 25px;
+  margin-right: 3%;
   margin-top: 50px;
   color: white;
 }
@@ -121,7 +119,7 @@ body {
 .section--articleSkills__span {
   float: left;
   font-size: 30px;
-  margin-left: 45px;
+  margin-left: 5%;
   margin-top: 45px;
   color: black;
 }
@@ -131,7 +129,7 @@ body {
 }
 
 .section--articleSkills__list {
-  margin-left: 100px;
+  margin-left: 10%;
   display: grid;
   grid-template-columns: repeat(4, auto);
   list-style: none;
@@ -141,7 +139,7 @@ body {
 .section--articleSkills__item {
   margin: 2px;
   padding: 10px;
-  clip-path: inset(0% 0% 40% 0%);
+  clip-path: inset(0% 0% 37% 0%);
   transition: all .5s ease-in-out;
   cursor: pointer;
 }
@@ -196,7 +194,7 @@ body {
   background: #c4c4c4;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  width: 935px;
+  width: 90%;
   padding: 1em;
   margin-top: 10px;
   clip-path: inset(0% 65% 0% 0%);
@@ -210,17 +208,15 @@ body {
 }
 
 .section--articleProjects--project__title {
-  font-size: 30px;
+  font-size: 120%;
 }
 
 .section--articleProjects--project__img {
-  width: 300px;
-  padding-right: 25px;
+  width: 63%;
 }
 
 .section--articleProjects__text {
   font-size: 15px;
-  text-align: center;
 }
 /*Projects end*/
 
@@ -234,14 +230,14 @@ body {
 
 .footer__title {
   font-size: 25px;
-  padding-left: 700px;
+  padding-left: 46%;
   padding-top: 20px;
 }
 
 .footer__list {
   display: flex;
   list-style: none;
-  margin-left: 400px;
+  margin-left: 27%;
 }
 
 .footer__item {
@@ -278,11 +274,59 @@ body {
 
 .footer__rights {
   margin-top: 70px;
-  margin-left: 525px;
+  margin-left: 34%;
   font-family: monospace;
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 5px;
 }
-
 /*Footer end*/
+
+
+@media screen and (max-width: 775px){
+  .header--nav__list{
+      margin-left: 10%;
+  }
+
+  .header__name{
+      margin-left: 32%;
+      font-size: 30px;
+      width: 450px;
+  }
+  .section{
+      width: 140%;
+  }
+  .section--articleAbout{
+      width: 90%;
+  }
+  .section--articleAbout__span{
+      font-size: 10px;
+      margin-top: 12%;
+  }
+
+  .section--articleSkills__list{
+      float: left;
+      font-size: 15px;
+      margin-left: 4%;
+      margin-top: 55px;
+      color: rgb(0, 0, 0);
+  }
+
+  .section--articleProjects__span{
+      font-size: 17px;
+      margin-right: 8px;
+      margin-top: 75px;
+  }
+
+  .footer{
+      width: 660px;
+  }
+
+  .footer__list{
+      display: block;
+  }
+
+  .footer__rights{
+      margin-left: 70px;
+  }
+}
