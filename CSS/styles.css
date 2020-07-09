@@ -215,7 +215,7 @@ body {
   width: 63%;
 }
 
-.section--articleProjects__text {
+.section--articleProjects--project__text {
   font-size: 15px;
 }
 /*Projects end*/
@@ -302,6 +302,15 @@ body {
   .section--articleAbout__span{
       font-size: 10px;
       margin-top: 12%;
+      margin-right: 10px;
+  }
+
+  .section--articleAbout__text{
+    font-size: 11px;
+  }
+
+  .section--articleSkills{
+    height: 390px;
   }
 
   .section--articleSkills__list{
@@ -312,10 +321,24 @@ body {
       color: rgb(0, 0, 0);
   }
 
+  .section--articleSkills__span{
+    margin-left: 3%;
+    margin-top: 53px;
+    font-size: 15px;
+  }
+
+  .section--articleProjects{
+    height: 580px;
+  }
+
   .section--articleProjects__span{
-      font-size: 17px;
+      font-size: 15px;
       margin-right: 8px;
-      margin-top: 75px;
+      margin-top: 45px;
+  }
+
+  .section--articleProjects--project__text{
+    font-size: 11px;
   }
 
   .footer{
