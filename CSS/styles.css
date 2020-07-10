@@ -165,7 +165,7 @@ body {
   font-size: 60px;
 }
 
-.section--articleSkills__item i:hover i {
+.section--articleSkills__item i:hover{
   color: #201919;
 }
 
