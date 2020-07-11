@@ -62,7 +62,7 @@ body {
 
 /*About*/
 .section--articleAbout {
-  background: black;
+  background: gray;
   padding: 1em;
   border-radius: 10px;
   height: 168px;
@@ -96,6 +96,7 @@ body {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-right: 160px;
 }
 
 .section--articleAbout__btn{
